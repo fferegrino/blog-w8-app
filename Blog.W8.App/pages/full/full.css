@@ -1,0 +1,196 @@
+﻿.item-content {
+    padding-bottom: 10px;
+}
+
+.item-date {
+    padding: 10px 0px;
+    font-weight: bold;
+}
+
+.full {
+    -ms-grid-columns: 106px 1fr;
+    display: -ms-grid;
+    height: 100%;
+    width: 100%;
+}
+
+    .full header[role=banner] {
+        -ms-grid-column: 1;
+        -ms-grid-column-span: 2;
+    }
+
+        .full header[role=banner] .pagetitle {
+            overflow: hidden;
+            width: calc(100% - 20px);
+        }
+
+    
+
+    .full .articlesection {
+        -ms-grid-column: 2;
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 2;
+        overflow-y: auto;
+        position: relative;
+        z-index: 0;
+        padding-left: 0;
+        padding-right: 120px;
+        padding-bottom: 10px;
+    }
+
+[dir=rtl] .full .articlesection {
+    padding-left: 120px;
+    padding-right: 0px;
+}
+
+.full .articlesection header {
+    -ms-grid-columns: 180px 20px 1fr;
+    -ms-grid-rows: 180px;
+    display: -ms-grid;
+    margin-bottom: 5px;
+    margin-top: 60px;
+}
+
+    .full .articlesection header .text {
+        -ms-grid-column: 3;
+    }
+
+        .full .articlesection header .text .article-subtitle {
+            margin-top: 4px;
+        }
+
+    .full .articlesection header .article-image {
+        height: 180px;
+        width: 180px;
+    }
+
+.full .articlesection .article-content {
+    overflow-y: auto;
+}
+
+    .full .articlesection .article-content p {
+        margin-bottom: 16pt;
+    }
+
+@media screen and (-ms-view-state: filled) {
+    .full {
+        -ms-grid-columns: 86px 1fr;
+    }
+
+        .full header[role=banner] {
+            -ms-grid-columns: 29px 71px 1fr;
+        }
+
+
+        .full .articlesection {
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+}
+
+@media screen and (-ms-view-state: snapped) {
+    .full {
+        -ms-grid-columns: 320px;
+    }
+
+       
+    [dir] .full .articlesection {
+        -ms-grid-row-span: 1;
+        -ms-grid-row: 2;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .full .articlesection img {
+        width: 200px;
+    }
+
+    .full .articlesection header {
+        display: block;
+        margin-top: 0;
+    }
+
+        .full .articlesection header .text {
+            -ms-grid-column: 1;
+            margin-top: 6px;
+        }
+
+            .full .articlesection header .text .article-subtitle {
+                margin-bottom: 16px;
+                margin-top: 10px;
+                overflow: hidden;
+            }
+
+        .full .articlesection header .article-image {
+            height: 160px;
+            width: 242px;
+        }
+
+    .full .itemlistsection, .full .articlesection {
+        -ms-grid-column: 1;
+        /*visibility: hidden;*/
+    }
+
+    .full .primarycolumn {
+        -ms-grid-column: 1;
+        visibility: visible;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    .full {
+        -ms-grid-columns: 1fr;
+    }
+
+
+    [dir] .full .articlesection {
+        -ms-grid-row: 2;
+        -ms-grid-row-span: 1;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .full .articlesection .header {
+        margin-top: 0;
+    }
+
+    .full .itemlistsection, .full .articlesection {
+        -ms-grid-column: 1;
+        /*visibility: hidden;*/
+    }
+
+    .full .primarycolumn {
+        -ms-grid-column: 1;
+        visibility: visible;
+    }
+}
+
+.full .itemlistsection .itemlist .item .item-date {
+    -ms-grid-column: 1;
+    background-color: #652d90;
+    color: #fff;
+}
+
+    .full .itemlistsection .itemlist .item .item-date .item-month {
+        margin-top: 12px;
+        margin-left: 12px;
+        margin-bottom: 4px;
+        font-weight: bold;
+        font-size: 28px;
+    }
+
+    .full .itemlistsection .itemlist .item .item-date .item-day {
+        margin-left: 12px;
+        font-size: 28px;
+    }
+
+
+
+/*#myListView .win-selectionbackground{
+    background-color:#652d90;
+}  
+
+#myListView .win-selectionbackground .item .item-date {
+    -ms-grid-column: 1;
+    background-color: #fff;
+    color: #652d90;
+}*/
