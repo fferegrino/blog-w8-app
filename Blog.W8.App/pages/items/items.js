@@ -17,9 +17,10 @@
             listView.oniteminvoked = this._itemInvoked.bind(this);
             var appbar = document.getElementById('appbar');
             var appbarCtrl = appbar.winControl;
-            appbarCtrl.hideCommands(["nav"], false);
+            appbarCtrl.hideCommands(["nav"], false); appbarCtrl.hideCommands(["commentB"], false);
             appbarCtrl.hideCommands(["homeB"], false);
             appbarCtrl.showCommands(["shareB"], false);
+            
 
             this._initializeLayout(listView, Windows.UI.ViewManagement.ApplicationView.value);
             listView.element.focus();

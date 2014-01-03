@@ -116,7 +116,8 @@
                 -ms-grid-row: 1;
                 -ms-grid-row-align: stretch;
                 text-align: right;
-                color: #fff;
+                color: #515151;
+				font-weight:bold;
                 width: 80px;
                 /*background: transparent;*/
                 display: inline-block;

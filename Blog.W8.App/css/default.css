@@ -1,6 +1,6 @@
 ﻿#contenthost {
     height: 100%;
-    color:#515151 ;
+    color: #515151;
     background-color: #F0F0F0;
     width: 100%;
 }
@@ -39,6 +39,19 @@
         -ms-grid-row: 2;
         height: 100%;
         width: 100%;
+    }
+
+#appbar {
+    background-color: #515151;
+    color: #d7d7d7;
+}
+
+#appbar .win-commandimage,
+#appbar .win-command {
+    color: #F0F0F0;
+}
+    #appbar .win-commandring {
+        border-color: #F0F0F0;
     }
 
 @media screen and (-ms-view-state: snapped) {

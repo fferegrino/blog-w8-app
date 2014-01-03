@@ -22,9 +22,11 @@
             var appbarCtrl = appbar.winControl;
             appbarCtrl.showCommands(["nav"], false);
             appbarCtrl.showCommands(["homeB"], false);
+            appbarCtrl.showCommands(["commentB"], false);
             appbarCtrl.hideCommands(["shareB"], false);
 
             document.getElementById('nav').addEventListener("click", verCompleto, false);
+            document.getElementById('commentB').addEventListener("click", comentarPost, false);
             //document.getElementById('shareB').addEventListener("click", showShareUI, false);
             document.getElementById('homeB').addEventListener("click", goToHomePage, false);
 
@@ -49,6 +51,13 @@
     function verCompleto() {
         var url = new Windows.Foundation.Uri(post.url);
         Windows.System.Launcher.launchUriAsync(url);
+    }
+
+    function comentarPost() {
+
+        var url = new Windows.Foundation.Uri(post.url + "#comment-form");
+        Windows.System.Launcher.launchUriAsync(url);
+            
     }
 
     function goToHomePage(eventInfo) {
