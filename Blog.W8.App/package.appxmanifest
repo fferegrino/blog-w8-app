@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="14107fferegrino.ElblogdeFeregrino" Version="1.0.0.1" Publisher="CN=8BD20898-9E0A-4C13-AC37-E9D349AF4781" />
+  <Identity Name="14107fferegrino.ElblogdeFeregrino" Version="1.0.1.2" Publisher="CN=8BD20898-9E0A-4C13-AC37-E9D349AF4781" />
   <Properties>
     <DisplayName>El blog de Feregrino</DisplayName>
     <PublisherDisplayName>fferegrino</PublisherDisplayName>
